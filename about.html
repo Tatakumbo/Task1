@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about my journey, goals, and aspirations as a developer">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            background: #4a90e2;
+            margin-bottom: 3rem;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+        }
+
+        ul li {
+            font-size: 1.125rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .italic-text {
+            font-style: italic;
+            background: #f0f7ff;
+            padding: 1.5rem;
+            border-left: 4px solid #4a90e2;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p, ul li {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            nav .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">TempPortfolio</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main data-testid="test-about-page">
+        <h1>About Me</h1>
+        <div class="divider"></div>
+
+        <section data-testid="test-about-bio">
+            <h2>Biography</h2>
+            <p>
+                I'm a learning web dev with over 6 months of learning in FPI, youtube and litle experience  in proffesional development. My journey began with a curiosity about how things work, which evolved 
+                into a deep love for creating intuitive and beautiful user experiences. I look forward to working with fellow devs and collaborating as a team on bigger projects from startups 
+                to established companies.
+            </p>
+        </section>
+
+        <section data-testid="test-about-goals">
+            <h2>My Goals in This Program</h2>
+            <ul>
+                <li>Master modern frontend development practices and frameworks</li>
+                <li>Build a portfolio of production-ready applications</li>
+                <li>Collaborate with talented developers and learn from them</li>
+                <li>Improve my problem-solving skills and coding efficiency</li>
+                <li>Contribute to open-source projects and the developer community</li>
+            </ul>
+        </section>
+
+        <section data-testid="test-about-confidence">
+            <h2>Areas Where I Need to Build Confidence</h2>
+            <p>
+                While I'm comfortable with frontend basics, I recognize there are areas where I need to 
+                grow. E plenty sha.
+            </p>
+        </section>
+
+        <section data-testid="test-about-future-note">
+            <h2>A Note to My Future Self</h2>
+            <div class="italic-text">
+                <p>
+                    Dear Future Me — Remember this moment when everything feels challenging and new. 
+                    The confusion you feel now is not a sign of inadequacy; it's proof that you're learning 
+                    and growing. Keep pushing through the difficult concepts, ask questions without hesitation, 
+                    and celebrate every small victory. A year from now, look back at this and be proud of 
+                    how far you've come. You've got this! <br><br>Sharp Sharpppp!!
+                </p>
+            </div>
+        </section>
+
+        <section data-testid="test-about-extra">
+            <h2>Additional Thoughts</h2>
+            <p>
+                Beyond coding, I believe in the importance of community and continuous learning. Although, i'm a junoir developr, I enjoy 
+                mentoring other junior developers, sharing what I learn 
+                through social media nd co.I'm excited about the journey ahead and grateful for every opportunity to learn 
+                and grow in this ever-evolving field.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
